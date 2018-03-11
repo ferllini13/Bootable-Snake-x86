@@ -7,13 +7,14 @@ CCR = qemu-system-i386
 CFLAGS = -fbin -o
 RFLAGS = -fda
 
+all: $(IMG)
 
-$(OUTIMG): $(SRC) 
+
+$(IMG): $(SRC) 
 	$(CC) $(SRC) $(CFLAGS) $(IMG)
 
 
-
-run:$(OUTIMG)
+run:$(IMG)
 	$(CCR) $(RFLAGS) $(IMG)
 
 
