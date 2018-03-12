@@ -1,4 +1,4 @@
-IMG = ./bin/tetranglix.img
+IMG = ./bin/snake.img
 SRC = ./src/snake.asm
 
 CC = nasm
